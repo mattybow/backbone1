@@ -1,0 +1,308 @@
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<span class="h4"><input type="text" class="invisible-input-90" value="RULEpkg Standardization Full Auto"><span>
+		<h3 class="no-margin pull-right"><span class="label label-default">001</span></h3>
+	</div>
+	<div class="panel-body">
+	<span class="pull-right"><a href="#" class="btn btn-default vapor-color"><span class="glyphicon glyphicon-save"></span> save</a></span>
+	<ul class="nav nav-tabs" id="myTab">
+	  <li class="active"><a href="#home" data-toggle="tab">Main</a></li>
+	  <li><a href="#admin" data-toggle="tab">Owners</a></li>
+	  <li><a href="#docs" data-toggle="tab">Docs</a></li>
+	  <li><a href="#pi-ctrl" data-toggle="tab">PI Ctrl</a></li>
+	</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" id="home">
+				<div class="row tmargin">
+					<label class="col-sm-1 control-label" for="status">status</label>
+					<div class="col-sm-9">
+						<ol class="breadcrumb">
+							<li>dev</li>
+							<li>drb</li>
+							<li class="active">release</li>
+							<li class="active">monitoring</li>
+						</ol>
+					</div>
+					<div class="col-sm-1">
+						<a class="btn btn-default vapor-color">next stage <span class="glyphicon glyphicon-chevron-right"></span></a>
+					</div>
+				</div>
+				<form>
+					<div class="row">
+						<div class="col-sm-10">
+							<div class="form-group">	
+								<div class="row">
+										<div class="form-group">
+											<label class="col-sm-1 control-label" for="title">summary</label>
+											<div class="col-sm-12">
+												<textarea class="form-control ta"rows="2"></textarea>
+											</div>
+										</div>
+									</div>
+							</div>
+
+							<div class="form-group">
+								<div class="row">
+									<label class="col-sm-2 control-label" for="title">as-is</label>
+									<label class="col-sm-2 col-sm-offset-4 control-label" for="title">to-be</label>
+								</div>
+								<div class="row">
+									<div class="col-sm-6">
+										<textarea class="form-control ta"rows="3"></textarea>
+									</div>
+									<div class="col-sm-6">
+										<textarea class="form-control ta"rows="3"></textarea>
+									</div>
+								</div>
+							</div><!--form-group-->
+						</div><!--col-sm-10-->
+						<div class="col-sm-2">
+							<div class="row">
+								<div class="form-group">
+									<label class="control-label" for="title">workflow</label>
+									<div class="col-sm-11">
+										<div class="btn-group btn-block">
+											<button type="button" class="btn btn-default dropdown-toggle btn-block" data-toggle="dropdown">task 
+												<span class="caret"></span>
+											</button>
+											<ul class="dropdown-menu" role="menu">
+												<li><a href="#">workflow 1</a></li>
+												<li><a href="#">minor change</a></li>
+												<li><a href="#">major change</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="form-group">
+									<label class="control-label" for="title">priority</label>
+									<div class="btn-group form-group col-sm-11">
+										<button type="button" class="btn btn-sm btn-default">1</button>
+										<button type="button" class="btn btn-sm btn-default">2</button>
+										<button type="button" class="btn btn-sm btn-default">3</button>
+										<button type="button" class="btn btn-sm btn-danger">h</button>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="form-group">													
+									<label class="control-label" for="title">customer</label>
+									<div class="col-sm-11">
+										<ul class="list-group form-group">
+											<li class="list-group-item active">
+											<input type="text" class="invisible-input-100" value="mbow">
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div><!--col-sm-2-->
+					</div><!--row-->
+					<div class="row">
+						<div class="col-sm-12">
+						<hr/>
+						<h4>recent activity</h4>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<table class="table table-striped">
+								<thead>
+									<tr>
+										<th>datetime</th>
+										<th>userid</th>
+										<th>comment</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>5/5/2014 15:41:33</td>
+										<td>svedamanikam</td>
+										<td>here is a comment about nothing important, vapor modified for example</td>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</form>
+			</div><!--tabpane #main-->
+			<div class="tab-pane" id="admin">
+				<div class="row tmargin">
+					<div class="col-sm-10">
+						<div class="form-group">
+							<div class="row">
+								<label class="col-sm-2 control-label" for="title">main module</label>
+								<label class="col-sm-3 control-label" for="title">owner</label>
+								<label class="col-sm-2 col-sm-offset-1 control-label" for="title">submodules <a href="#"><i class="fa fa-plus"></i></a></label>
+								<label class="col-sm-3 control-label" for="title">owners</label>
+							</div>
+							<div class="row">
+								<div class="col-sm-2">
+									<div class="btn-group btn-block">
+										<button type="button" class="btn btn-default dropdown-toggle btn-block" data-toggle="dropdown">RULEpkg 
+											<span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu" role="menu">
+											<li><a href="#">Action</a></li>
+											<li><a href="#">Another action</a></li>
+											<li><a href="#">Something else here</a></li>
+											<li class="divider"></li>
+											<li><a href="#">Separated link</a></li>
+										 </ul>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<input type="text" class="form-control" id="exampleInputEmail1" placeholder="cangell">
+								</div>
+								<div class="col-sm-2 col-sm-offset-1">
+									<div class="btn-group btn-block">
+										<button type="button" class="btn btn-default dropdown-toggle btn-block" data-toggle="dropdown">ADS 
+											<span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu" role="menu">
+											<li><a href="#">Action</a></li>
+											<li><a href="#">Another action</a></li>
+											<li><a href="#">Something else here</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<input type="text" class="form-control" id="exampleInputEmail1" placeholder="sgentry">
+								</div>
+							</div><!--row-->
+						</div><!--form-group-->
+						<div class="form-group">
+							<div class="row">
+								<div class="col-sm-2 col-sm-offset-6">
+									<div class="btn-group btn-block">
+										<button type="button" class="btn btn-default dropdown-toggle btn-block" data-toggle="dropdown">WORKMAN 
+											<span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu" role="menu">
+											<li><a href="#">Action</a></li>
+											<li><a href="#">Another action</a></li>
+											<li><a href="#">Something else here</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<input type="text" class="form-control" id="exampleInputEmail1" placeholder="dferris">
+								</div>
+							</div>
+						</div><!--form-group-->
+					</div><!--col-sm-10-->
+				</div>
+				<div class="row">
+					<hr/>
+					<h4 class="col-md-3">pi owner</h4>
+				</div>
+				<div class="row">
+					<div class="col-sm-1 vertical-cent">
+						<img src="http://lorempixel.com/100/100/people" class="img-circle owner-avatar">
+					</div>
+					<div class="col-sm-3 vertical-cent">
+						<div class="input-group">
+							<input type="text" class="form-control" value="jmahmood">
+							<div class="input-group-btn">
+								<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+								<ul class="dropdown-menu pull-right">
+								  <li><a href="#">pi1</a></li>
+								  <li><a href="#">pi2</a></li>
+								  <li><a href="#">pi3</a></li>
+								  <li class="divider"></li>
+								  <li><a href="#">default pi</a></li>
+								</ul>
+							</div><!-- /btn-group -->
+						</div><!-- /input-group -->
+					</div><!-- /col-sm-3 -->
+				</div>
+				<hr/>
+				<div class="row">
+					<h4 class="col-md-3">tr owner</h4>
+				</div>
+				<div class="row">
+					<div class="col-sm-1 vertical-cent">
+						<img src="http://lorempixel.com/100/100/people" class="img-circle owner-avatar">
+					</div>
+					<div class="col-sm-3 vertical-cent">
+						<div class="input-group">
+							<input type="text" class="form-control" value="jmahmood">
+							<div class="input-group-btn">
+								<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+								<ul class="dropdown-menu pull-right">
+								  <li><a href="#">pi1</a></li>
+								  <li><a href="#">pi2</a></li>
+								  <li><a href="#">pi3</a></li>
+								  <li class="divider"></li>
+								  <li><a href="#">default pi</a></li>
+								</ul>
+							</div><!-- /btn-group -->
+						</div><!-- /input-group -->
+					</div><!-- /col-sm-3 -->
+				</div>
+				<hr/>
+				<div class="row">
+					<h4 class="col-md-3">pi owner</h4>
+				</div>
+				<div class="row">
+					<div class="col-md-1 vertical-cent">
+						<img src="http://lorempixel.com/100/100/people" class="img-circle owner-avatar">
+					</div>
+					<div class="col-md-3 vertical-cent">
+						<input type="text" class="form-control" id="exampleInputEmail1" placeholder="jmahmood">
+					</div>
+				</div>
+				<hr/>
+			</div><!--tab-pane #admin-->
+			<div class="tab-pane" id="docs">
+				<form action="/file-upload"	class="dropzone" id="my-awesome-dropzone"></form>
+				<div class="list-group">
+				  <a href="#" class="list-group-item file-list">
+					 <div class="row">
+						<div class="col-sm-7">GETMEASURESLOTID.sql</div>
+						<div class="col-sm-3" id="file_date">
+							<em>uploaded 2/21/2014 12:31:44</em>
+						</div>
+						<div class="col-sm-1" id="file_size">
+							<b>2Kb</b>
+						</div>
+						<div class="btn-file-remove vapor-color col-sm-1">
+							<i class="fa fa-times-circle"></i>
+						</div>
+					 </div>
+				  </a>
+				  <a href="#" class="list-group-item file-list">
+				  <div class="row">
+						<div class="col-sm-7">ProcInfo.properties</div>
+						<div class="col-sm-3" id="file_date">
+							<em>uploaded 2/21/2014 12:31:44</em>
+						</div>
+						<div class="col-sm-1" id="file_size">
+							<b>2Kb</b>
+						</div>
+						<div class="btn-file-remove vapor-color col-sm-1">
+							<i class="fa fa-times-circle"></i>
+						</div>
+					 </div>
+				  </a>
+				  <a href="#" class="list-group-item file-list">
+				  <div class="row">
+						<div class="col-sm-7">Jelly.sh</div>
+						<div class="col-sm-3" id="file_date">
+							<em>uploaded 2/21/2014 12:31:44</em>
+						</div>
+						<div class="col-sm-1" id="file_size">
+							<b>2Kb</b>
+						</div>
+						<div class="btn-file-remove vapor-color col-sm-1">
+							<i class="fa fa-times-circle"></i>
+						</div>
+					 </div>
+				  </a>
+				</div>
+			</div><!--tab-pane #docs-->
+			<div class="tab-pane" id="pi-ctrl">
+			</div><!--tab-pane #pi-ctrl-->
+		</div><!--tabcontent-->
+	</div><!--panelbody-->
+</div>

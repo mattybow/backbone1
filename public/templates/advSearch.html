@@ -1,0 +1,95 @@
+<h4>Advanced Search</h4>
+<hr/>
+<div class="collapse in" id="search-control">
+	<form class="form-horizontal" role="form" id="searchform">
+		<div class="form-group row">
+			<label for="vaporid" class="col-sm-2 control-label">vapor</label>
+			<div class="col-sm-6">
+				<input type="text" class="form-control" id="vaporid" placeholder="vapor number">
+			</div>
+			<div class="col-sm-1">
+				<input type="submit" class="btn btn-primary" id="vaporid" value="search">
+			</div>
+			<div class="col-sm-1">
+				<button class="btn btn-default" id="clearform">clear</button>
+			</div>
+		 </div>
+		 <div class="form-group row">
+			<label for="vaporid" class="col-sm-2 control-label">title</label>
+			<div class="col-sm-6">
+				<div class="input-group">
+					<input type="text" class="form-control" id="vaporid" placeholder="title">
+					<span class="input-group-btn">
+						<button class="btn btn-default add" type="button">+</button>
+					</span>
+				</div><!-- /input-group -->
+			</div>
+		 </div>
+		 <div class="form-group row">
+			<label for="vaporid" class="col-sm-2 control-label">description</label>
+			<div class="col-sm-6">
+				<div class="input-group">
+					<input type="text" class="form-control" id="vaporid" placeholder="description">
+					<span class="input-group-btn">
+						<button class="btn btn-default add" type="button">+</button>
+					</span>
+				</div><!-- /input-group -->
+			</div>
+		 </div>
+		 <div class="form-group row">
+			<label for="vaporid" class="col-sm-2 control-label">owner</label>
+			<div class="col-sm-6">
+				<div class="input-group">
+					<input type="text" class="form-control" id="vaporid" placeholder="owner">
+					<span class="input-group-btn">
+						<button class="btn btn-default add" id="kitty" type="button">+</button>
+					</span>
+				</div><!-- /input-group -->
+			</div>
+		 </div>
+		 <div class="form-group row">
+			<label for="vaporid" class="col-sm-2 control-label">module</label>
+			<div class="col-sm-3">
+				<div class="btn-group">
+				  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+					module <span class="caret"></span>
+				  </button>
+				  <ul class="dropdown-menu" role="menu">
+					<li><a href="#">Action</a></li>
+					<li><a href="#">Another action</a></li>
+					<li><a href="#">Something else here</a></li>
+					<li class="divider"></li>
+					<li><a href="#">Separated link</a></li>
+				  </ul>
+				</div>
+			</div>
+		 </div>
+		 <div class="form-group row">
+			<label for="vaporid" class="col-sm-2 control-label">date</label>
+			<div class="col-sm-3">
+				<div class="input-group">
+			      <div class="input-group-btn">
+			        <button type="button" class="btn btn-default" id="date_selector"><%= date_selector %></button>
+			      </div><!-- /btn-group -->
+			      <input type="text" class="form-control" id="dateinput">
+			    </div><!-- /input-group -->
+			</div>
+		 </div>
+		 <div class="form-group row">
+			<label for="vaporid" class="col-sm-2 control-label">state</label>
+			<div class="col-sm-3">
+				<div class="btn-group btn-toggle" data-toggle="buttons"> 
+					<label class="btn btn-primary active">
+					  <input type="radio" name="options" value="option1"> active
+					</label>
+					<label class="btn btn-default">
+					  <input type="radio" name="options" value="option2" checked=""> inactive
+					</label>
+				</div>
+			</div>
+		 </div>
+	</form>
+</div>
+<div class="form-handle" data-toggle="collapse" data-target="#search-control">
+	<i class="fa fa-angle-double-down"></i>
+</div>

@@ -1,0 +1,419 @@
+@font-face {
+  font-family: "ssadec";
+  src: url("ss_adec.otf") format("opentype");
+}
+@font-face {
+	font-family:"play";
+	src: url(http://themes.googleusercontent.com/static/fonts/play/v4/IkErdnKw9ItVkLeeur9GHfesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+
+body{
+background-color:#FAFAFA;
+}
+
+/* logo */
+
+#logo {
+  position:fixed;
+  top:0px;
+  left:0px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  width: 7%;
+  -webkit-font-smoothing: antialiased;
+}
+
+#logo .express {
+  display: block;
+  font-family: 'play' !important;
+  font-style: normal;
+  font-weight:500;
+  font-size: 40px;
+  margin-left:40px;
+  color: #353535;
+  width: 100%;
+}
+
+.setbehind {
+	opacity:0.2;
+	overflow:hidden;
+	font-size:90px;
+	position: absolute;
+	top:0px;
+	height:52px;
+	z-index:-1;
+}
+
+.center {
+left:50%;
+}
+
+#logo .description {
+  position: relative;
+  top: -5px;
+  font: 100 60px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #cecece;
+  line-height: .75;
+}
+
+#logo em {
+  font-style: normal;
+  font-weight: 100;
+  font-size: 9px;
+  color: #999;
+  margin-left: 5px;
+}
+
+#logo a {
+  color: #cecece;
+}
+
+#logo a:hover {
+  text-decoration: none;
+  color: #858585;
+}
+.inner header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(255,255,255,.9);
+	width: 100%;
+	height: 60px;
+	z-index: 100;
+}
+#navmenu a {
+  font-size: 15px;
+  font-family: 'Open Sans';
+  color: #7B838A;
+  padding-right: 25px;
+  border-right: 2px dotted #eee;
+}
+
+.nav-item{
+	padding-left:20px;
+	padding-bottom:5px;
+	width:auto;
+}
+
+.navbar-wrapper {
+	position:relative;
+	top:10px;
+	margin-right:40px;
+	float:right;
+	height:auto;
+}
+
+#navmenu li{
+	list-style:none;
+	display: table-cell;
+    vertical-align: middle;
+}
+.inner header {
+	border-bottom: 1px solid #ddd;
+	box-shadow: 0 0 4px #eee;
+}
+.nav-item.selected{
+	border-bottom: 3px solid #3c948b;
+}
+.navsearch{
+	
+}
+/*side nav*/
+nav.side{
+max-width:150px;
+}
+.side-nav{
+position:fixed;
+float:left;
+display:inline;
+top:80px;
+left:30px;
+margin-left:0px;
+width:auto;
+min-length:100px;
+}
+.side-nav a:hover{
+	text-decoration:none;
+	cursor:pointer;
+	opacity:1.0;
+	color:#3c948b;
+}
+.side-nav a:focus{
+	color:#3c948b;
+}
+.side-nav-link{
+display:block;
+color: #171717;
+opacity:0.6;
+
+}
+.side-nav-label{
+font-size:13px;
+color: #171717;
+text-decoration:none;
+position:relative;
+display:inline-block;
+padding-left:10px;
+line-height:4em;
+}
+.vapor-color{
+color:#171717;
+opacity:0.6;
+}
+.vapor-color:hover{
+color:#3c948b;
+opacity:1.0;
+}
+/*modal newvapor*/
+.icon-crop{
+	position:absolute;
+	z-index:1;
+	left:-60px;
+	top:40px;
+}
+.icon-crop i{
+	opacity:0.2;
+	color: #AAAAAA;
+	font-size:250px;
+}
+.modal-content{
+	overflow:hidden;
+}
+.btn-module{
+width:100%;
+}
+/*vapor display*/
+.sum-text{
+font-size:16px;
+}
+.no-margin{
+	margin: 0px;
+}
+.fa-1x5{
+font-size:1.5em;
+}
+.ib{
+display: inline-block;
+}
+#vapor-link{
+display: inline-block;
+float: right;
+margin-right: 10px;
+margin-top: 2px;
+}
+/*vapor search*/
+.form-handle{
+	width:auto;
+	height:20px;
+	text-align:center;
+	background-image:url('../images/white_carbon.png');
+	display:none;
+	opacity:0.8;
+}
+.form-handle:hover{
+	cursor:pointer;
+	opacity:1;
+}
+/*vapor edit*/
+.vapor-link{
+	margin-left:10px;
+	cursor:pointer;
+}
+.panel-sm{
+	padding:6px 12px;
+}
+.x2{
+	font-size:1.2em;
+	height:2em;
+}
+.no-margin{
+	margin:0px 0px;
+}
+.vcenter{
+text-align:center;
+}
+.f-lg{
+	font-size:1em;
+}
+.ta {
+  transition: height 0.2s;
+  -webkit-transition: height 0.2s; 
+  -moz-transition: height 0.2s; 
+}
+.full-width{
+	width:auto;
+}
+.panel-heading{
+	line-height:2em;
+}
+.invisible-input-100{
+	width:100%;
+	border:none;
+}
+.invisible-input-90{
+	width:90%;
+	border:none;
+}
+.invisible-input-60{
+	width:60%;
+	width:60%;
+	border:none;
+}
+.tmargin{
+margin-top:2%;
+}
+.vertical-cent{
+	float:none;
+    display:inline-block;
+    vertical-align:middle;
+  }
+.owner-avatar{
+	width:80%;
+	float:right;
+	box-shadow: 1px 2px 2px #888888;
+}
+.list-group-item.file-list:first-child{
+	border-top-left-radius:0px !important;
+	border-top-right-radius:0px !important;
+	border-top-width: 0px;
+}
+a.file-list{
+overflow:hidden;
+}
+.file-list .fa-times-circle{
+	font-size:20px;
+}
+.btn-file-remove{
+	width:auto;
+	height:inherit;
+	display:inline-block;
+}
+/*body content*/
+.container{
+	position:relative;
+	margin-left:150px;
+	margin-top:30px;
+}
+th .fa-stack{
+	width:15px;
+	height:15px;
+	vertical-align:middle;
+	line-height:1em;
+}
+th .fa-stack i {
+	font-size:0.8em;
+	width:10px;
+	height:10px;
+}
+th .btn{
+padding-right:3px;
+padding-left:6px;
+padding-top:4px;
+padding-bottom:4px;
+}
+#vaporListTable thead th{
+min-width:120px;
+}
+.btn-group > .btn + .dropdown-toggle{
+	padding-right:4px;
+	padding-left:4px;
+}
+table {
+	table-layout:a;
+}
+.inner {
+margin-top: 60px;
+}
+#content {
+margin-bottom: 80px;
+float:left;
+}
+thead button i{
+font-size:11px;
+display:inline-block;
+}
+thead button{
+vertical-align:middle;
+display:inline-block;
+}
+/*post*/
+.postcontent {
+
+}
+.votecontent {
+	width: 60px;
+	vertical-align: top;
+}
+.vote{
+width:60px;
+font-size:30px;
+text-align:center;
+color:#818185;
+}
+.vote-count{
+margin:-10px 0px;
+}
+#post-title {
+	padding-bottom: 9px;
+	margin: 40px 0 20px;
+	border-bottom: 1px solid #eee;
+	width:960px;
+}
+.tags{
+	position:relative;
+}
+section > img{
+	padding-bottom:10px;
+}
+.tag { 
+  position: relative;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: 5px;
+  float: left;
+  width: auto;
+}
+
+
+.show-grid{
+border-width: 1px;
+border-radius: 2px;
+background-color: rgba(86,61,124,0.15);
+}
+/* user */
+.stamp {
+	width: 100%;
+	height:auto;
+	text-align:left;
+	vertical-align:top;
+	font-size:12px;
+}
+.avatar-details {
+	height:auto;
+	display:inline-block;
+	text-align:left;
+	vertical-align:top;
+	margin-left:5%;
+	overflow: auto;
+}
+.reputation {
+	text-align:left;
+	padding-right:10px;
+}
+span#gold,#silver,#bronze{
+	padding-right:5px;
+}
+i.gold{
+	color:#CC9900;
+	text-shadow: 1px 1px 1px #303030;
+}
+i.silver{
+	color:#8B8A8C;
+	text-shadow: 1px 1px 1px #303030;
+}
+i.bronze{
+	color:#996633;
+	text-shadow: 1px 1px 1px #303030;
+}

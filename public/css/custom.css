@@ -1,0 +1,21 @@
+.x2{
+	font-size:1.2em;
+	height:2em;
+}
+.no-margin{
+	margin:0px 0px;
+}
+.f-lg{
+	font-size:1em;
+}
+.ta {
+  transition: height 0.2s;
+  -webkit-transition: height 0.2s; 
+  -moz-transition: height 0.2s; 
+}
+.full-width{
+	width:auto;
+}
+.panel-heading{
+	line-height:2em;
+}
