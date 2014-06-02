@@ -3,11 +3,11 @@ define(["jquery","underscore","backbone","dispatcher","text!templates/sidenav.ht
 		var SideView = Backbone.View.extend({
 			el:'.side-nav',
 			initialize: function(options){
-				Dispatcher.on("route:search",function(){
-					Router.navigate("/search", {trigger:true});
+				App.Dispatcher.on("route:search",function(){
+					App.Router.navigate("/search", {trigger:true});
 				});
-				Dispatcher.on("route:myvapors",function(){
-					Router.navigate("/myvapors", {trigger:true});
+				App.Dispatcher.on("route:myvapors",function(){
+					App.Router.navigate("/myvapors", {trigger:true});
 				});
 			},
 			render: function(){

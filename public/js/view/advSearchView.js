@@ -24,28 +24,42 @@ define(["jquery",
 				return this;
 			},
 
-			diff: function(obj1, obj2){
-				var output = {};
-				_.each(obj1,function(v,k){
-					if (obj2[k] !== v) output[k]=v;
-				});
-				return output;
-			},
-
-			renderPartial:function(self,rendered){
-				var diffs = this.diff(self.attributes,self._previousAttributes);
-				_.each(diffs,function(v,k){
+			renderPartial:function(){
+				_.each(this.model.changedAttributes(),function(v,k){
 					var selector = '#' + k;
-					$(selector).text(v);
+					if ($(selector).is("input")) {
+						$(selector).val(v);
+					} else if ($(selector).is("button")) {
+						$(selector).text(v);
+					}
 				});
 			},
 			
+			renderAgain:function(){
+				console.log(this.$el);
+				this.setElement(this.$el).render();
+				//return this;
+			},
+			
 			events:{
-				"click #date_selector":"toggleDateSelection"
+				"click #date_selector":"toggleDateSelection",
+				"focusout input[type='text']":"saveVal",
+				"click #clearform":"clearForm"
+			},
+			
+			clearForm:function(){
+				this.model.set(this.model.defaults);
 			},
 
 			toggleDateSelection:function(){
 				this.model.toggleDateSelector();
+			},
+			
+			saveVal:function(ev){
+				var attribute = ev.target.id
+				var obj = {};
+				obj[attribute]=$('#' + attribute).val()
+				this.model.set(obj);
 			}
 			
 		});

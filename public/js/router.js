@@ -2,8 +2,9 @@
 define([
   'jquery',
   'underscore',
-  'backbone'
-], function ($, _, Backbone) {
+  'backbone',
+  'dispatcher'
+], function ($, _, Backbone,Dispatcher) {
   var AppRouter = Backbone.Router.extend({
     routes: {
       // Pages
@@ -16,25 +17,26 @@ define([
   });
 
   var initialize = function(options){
-    window.Router = new AppRouter();
+    window.App.Router = new AppRouter();
+	window.App.Dispatcher = Dispatcher;
 	var appView = options.appView;
-    Router.on('route:homeroute', function () {
+    App.Router.on('route:homeroute', function () {
 	  appView.render();
     });
 	
-	Router.on('route:myvapors', function () {
+	App.Router.on('route:myvapors', function () {
       appView.renderMain({view:'vaporList'});
     });
 	
-	Router.on('route:search', function () {
+	App.Router.on('route:search', function () {
       appView.renderMain({view:'advSearch'});
     });
 	
-	Router.on('route:view', function (id) {
+	App.Router.on('route:view', function (id) {
       appView.renderMain({view:'vaporView'});
     });
 	
-	Router.on('route:editVapor', function (id) {
+	App.Router.on('route:editVapor', function (id) {
       appView.renderMain({view:'vaporEditView'});
     });
 	

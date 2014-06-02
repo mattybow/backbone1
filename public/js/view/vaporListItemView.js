@@ -31,7 +31,7 @@ define(['jquery','underscore','backbone','text!templates/vaporListItem.html'],
 		
 		viewVapor:function(){
 			console.log('target acquired');
-			Router.navigate("/view/"+this.model.get('id'), {trigger:true});
+			App.Router.navigate("/view/"+this.model.get('id'), {trigger:true});
 		}
 
 	});

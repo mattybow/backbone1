@@ -7,12 +7,12 @@ define(['underscore','backbone'], function (_, Backbone) {
 			owner:'',
 			status:'active',
 			module:'',
-			date:'',
+			dateinput:'',
 			date_selector:'created',
 			hidden: false
 		},
 		
-		url: "/search",
+		url: "/myvapors",
 		
 		isHidden: function(){
 			return this.get('hidden');
